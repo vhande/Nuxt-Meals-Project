@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+.nuxt-link {
+    @apply text-red-400 hover:text-red-500 hover:italic
+}
+
+.text-wrap {
+    word-break: inherit;
+    line-height: 1.6rem;
+    overflow: hidden;
+    display: -webkit-box; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    max-height: 4.5rem;
+}
+
+.nav-link {
+    @apply text-red-500 focus:text-red-500
+}
+
+.form-control {
+    @apply focus:border-red-300
+}
+
+}
