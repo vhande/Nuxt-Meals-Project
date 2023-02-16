@@ -2,6 +2,7 @@
     <div class="card mb-3" style="max-width: 40rem;">
   <div class="card-body">
     <h5 class="card-title text-center font-semibold text-xl text-center  text-black-40">Ingredients</h5>
+    <h5 class="card-title text-center text-base text-center italic text-red-400">"Click on the ingredients to see what else you can cook"</h5>
     <div class="d-inline-flex flex-wrap align-items-center justify-content-center">
   <div v-for="n in 20">
   <ul class="list-group list-group-flush">
