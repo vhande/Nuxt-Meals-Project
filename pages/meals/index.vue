@@ -10,6 +10,7 @@
 </template>
 
 <script setup>
+const name = useName();
 const mainStore = useMainStore();
 const { data: mIngredient } = await useFetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${mainStore.name}`, { transform: (_mIngredient) => _mIngredient.meals })
 

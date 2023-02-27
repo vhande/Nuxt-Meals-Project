@@ -33,6 +33,4 @@ export default defineNuxtConfig({
         autoprefixer: {},
       },
     },
-
-    
 })
