@@ -6,7 +6,7 @@
     <div class="d-inline-flex flex-wrap align-items-center justify-content-center">
   <div v-for="n in 20">
   <ul class="list-group list-group-flush">
-    <NuxtLink to="/meals" @click="mainStore.name= singleMeal[`${'strIngredient' + n }`]" ><li 
+    <NuxtLink to="/meals" @click="mainStore.name= singleMeal[`${'strIngredient' + n }`],clickHandle" ><li 
     v-if="singleMeal[`${'strIngredient' + n }`] !== '' && singleMeal[`${'strIngredient' + n }`] !== null" 
     class="list-group-item border-0 hover:text-red-400">
     {{ singleMeal[`${"strIngredient" + n }`] }}
