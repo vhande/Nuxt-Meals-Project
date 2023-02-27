@@ -20,7 +20,7 @@
 }
 
 .nav-link {
-    @apply text-red-500 focus:text-red-500
+    @apply text-red-500 focus:text-red-500 active:text-red-500
 }
 
 .form-control {
