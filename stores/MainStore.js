@@ -1,16 +1,15 @@
-export const useMainStore = defineStore('MainStore', {
-   
-    state: () => ({
-        name: useLocalStorage("name", "beef")
-      }),
+import { defineStore } from 'pinia'
 
-      actions: {
-        updateMyValue(value) {
-          this.name = value
-          useLocalStorage('name', value)
-        }
-      }
+export const useMainStore = defineStore('mainStore', () => {
+  let name = ref()
+  process.client ? 
+  localStorage.getItem('name') ?
+  name = localStorage.getItem('name') : name = "Beef"  : ""
+
+      return {name}
     })
+
+  
   
   if (import.meta.hot) {
     import.meta.hot.accept(acceptHMRUpdate(useMainStore, import.meta.hot));

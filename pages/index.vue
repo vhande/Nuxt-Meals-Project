@@ -60,6 +60,9 @@ const a = radio
 
 const changeHandler = () => {
   mainStore.name = val
+  if(process.client){
+          localStorage.setItem("name", val.value);
+      }
   
 }
 
