@@ -1,10 +1,10 @@
 import { defineStore } from 'pinia'
 
 export const useMainStore = defineStore('mainStore', () => {
-  let name = ref()
+  const name = ref("Beef")
   process.client ? 
   localStorage.getItem('name') ?
-  name = localStorage.getItem('name') : name = "Beef"  : ""
+  name.value = localStorage.getItem('name') : ""  : ""
 
       return {name}
     })
